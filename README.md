@@ -1,4 +1,4 @@
-# AWS EC2 VM Launch — Practice Task
+# AWS Launch VM
 
 ## Objective
 The main goal of this task was to get hands-on experience with cloud virtual machines. I wanted to learn how to create an EC2 instance in AWS, connect to it via SSH, and perform basic Linux commands.
