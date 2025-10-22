@@ -1,89 +1,64 @@
-AWS-EC2-VM-launch
+# AWS EC2 VM Launch — Practice Task
 
-This repository contains my practice task for launching an AWS EC2 virtual machine, connecting to it via SSH, and exploring basic Linux commands.
+## Objective
+The main goal of this task was to get hands-on experience with cloud virtual machines. I wanted to learn how to create an EC2 instance in AWS, connect to it via SSH, and perform basic Linux commands.
 
-Objective
+## Tools I Used
+- AWS Free Tier account  
+- AWS EC2 (Elastic Compute Cloud)  
+- SSH client (or browser-based terminal)  
+- Ubuntu Server 22.04 LTS  
 
-The main goal of this task was to get hands-on experience with cloud virtual machines.
-I wanted to understand how to create, configure, and connect to an AWS EC2 instance, and get a feel for Infrastructure-as-a-Service (IaaS) — the foundation of cloud computing.
+## What I Did
 
-Tools I Used
+1. **Logged in to AWS**  
+   I logged into my AWS Management Console and opened the EC2 Dashboard. I confirmed that my Free Tier account was active so I could practice without incurring any costs.
 
-AWS Free Tier account
+2. **Created a New EC2 Instance**  
+   I clicked **Launch Instance** and configured the following:  
+   - **Instance Name:** `cloud-vm`  
+   - **Operating System:** Ubuntu Server 22.04 LTS (Free Tier Eligible)  
+   - **Instance Type:** t2.micro (1 vCPU, 1 GB RAM)  
+   - **Key Pair:** `cloudvmkey.pem` (for SSH access)  
+   - **Network Settings:** Enabled HTTP (80) and HTTPS (443)  
+   - **Region:** North Virginia (us-east-1)  
+   After reviewing the settings, I launched the instance and waited for it to pass the 2/2 status checks.
 
-AWS EC2 (Elastic Compute Cloud)
+3. **Connected to the EC2 Instance via SSH**  
+   Using my key pair and the public IP address of the instance, I connected via SSH. I ran basic Linux commands like `uname -a`, `ls`, and `whoami` to confirm that the server was working correctly. This gave me hands-on experience managing a remote server.
 
-SSH client (or browser-based terminal)
+4. **Stopped the EC2 Instance**  
+   After testing, I stopped the instance to avoid unnecessary charges. This taught me the importance of **responsible cloud resource management**.
 
-Steps I Followed
-1. Logged in to AWS
+5. **Checked VM Configuration**  
+   I reviewed the configuration of my instance:  
+   - Instance Name: `cloud-vm`  
+   - Operating System: Ubuntu 22.04 LTS  
+   - Region: North Virginia (us-east-1)  
+   - Instance Type: t2.micro (Free Tier Eligible)  
+   - Key Pair: `cloudvmkey.pem`  
+   - Firewall Rules: HTTP (80), HTTPS (443), SSH (22)  
+   - Connection Method: SSH (Client or Browser Terminal)
 
-I started by logging into my AWS Management Console and opening the EC2 Dashboard.
-I confirmed that my Free Tier was active so I could practice without worrying about costs.
+6. **Took Screenshots**  
+   I captured three screenshots showing my SSH session and instance details to demonstrate that everything was set up correctly.
 
-2. Created a New EC2 Instance
+## Screenshots
 
-I clicked Launch Instance and filled in the details:
+![Screenshot 1](screenshot(1).png)  
+![Screenshot 2](screenshot(2).png)  
+![Screenshot 3](screenshot(3).png)  
 
-Instance Name: cloud-vm
+## What I Learned
+- Learned how to create and configure an **AWS EC2 instance**.  
+- Practiced connecting to a remote server using **SSH**.  
+- Understood **basic Linux commands** in a cloud environment.  
+- Learned the importance of **stopping instances** to manage costs and resources.  
+- Gained hands-on experience with **Infrastructure-as-a-Service (IaaS)**.
 
-Operating System: Ubuntu Server 22.04 LTS (Free Tier Eligible)
+## Conclusion
+This task provided practical exposure to **AWS EC2 and cloud VM management**. I now feel confident working with remote servers, performing basic Linux operations, and managing cloud resources effectively.
 
-Instance Type: t2.micro (1 vCPU, 1 GB RAM)
-
-Key Pair: cloudvmkey.pem (needed for SSH access)
-
-Network Settings: Enabled HTTP (80) and HTTPS (443)
-
-Region: North Virginia (us-east-1)
-
-After reviewing the settings, I launched the instance and waited for it to pass the 2/2 status checks.
-
-3. Connected to the VM via SSH
-
-Once the instance was ready, I connected to it using my key pair and public IP address.
-To verify everything was working, I ran a few basic Linux commands: uname -a, ls, and whoami.
-Seeing the terminal respond instantly made me realize how powerful cloud computing is — I was literally controlling a remote server from my laptop!
-
-4. Stopped the EC2 Instance
-
-After testing, I stopped the instance to avoid unnecessary charges.
-It was a small but important step in managing cloud resources responsibly.
-
-VM Configuration at a Glance
-Parameter	Value
-Instance Name	cloud-vm
-Operating System	Ubuntu 22.04 LTS
-Region	North Virginia (us-east-1)
-Instance Type	t2.micro (Free Tier Eligible)
-Key Pair	cloudvmkey.pem
-Firewall Rules	HTTP (80), HTTPS (443), SSH (22)
-Connection Method	SSH (Client or Browser Terminal)
-Screenshots
-
-Here are the screenshots showing my progress:
-
-
-
-
-
-
-What I Learned
-
-How to create, configure, and connect to an AWS EC2 instance.
-
-Basics of SSH connection and remote Linux server management.
-
-Fundamentals of Infrastructure-as-a-Service (IaaS).
-
-The importance of stopping instances to save costs and manage cloud resources effectively.
-
-Conclusion
-
-This task was a great hands-on experience with AWS EC2.
-It helped me understand how cloud virtual machines work, how to access them remotely, and how to manage resources efficiently.
-I feel much more confident navigating the cloud now and look forward to exploring more advanced cloud services in the future.
-
-Author: Aishwarya Kopulwar
-Role: Cloud Computing Intern — Elevate Labs
-Date: October 2025
+**Author:** Aishwarya Kopulwar  
+**Role:** Cloud Computing Intern — Elevate Labs  
+**Date:** October 2025
