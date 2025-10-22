@@ -44,7 +44,7 @@ ls           # List files in the current directory
 whoami       # Confirm logged-in user
 Seeing the terminal respond instantly made me realize just how powerful cloud computing is — I was literally controlling a remote server from my laptop!
 
-4. Stopped the EC2 Instance
+### 4. Stopped the EC2 Instance
 After testing, I stopped the instance to avoid unnecessary charges.
 It was a small but important step in managing cloud resources responsibly.
 
@@ -58,14 +58,14 @@ Key Pair	cloudvmkey.pem
 Firewall Rules	HTTP (80), HTTPS (443), SSH (22)
 Connection Method	SSH (Client or Browser Terminal)
 
-Screenshots
+### 5. Screenshots
 Here are the screenshots showing my progress:
 
+![Screenshot 1](screenshot(1).png)  
+![Screenshot 2](screenshot(2).png)  
+![Screenshot 3](screenshot(3).png)
 
-
-
-
-What I Learned
+### 6. What I Learned
 How to create, configure, and connect to an AWS EC2 instance.
 
 Basics of SSH connection and remote Linux server management.
@@ -74,7 +74,7 @@ Fundamentals of Infrastructure-as-a-Service (IaaS).
 
 The importance of stopping instances to save costs and manage cloud resources effectively.
 
-Conclusion
+### 7. Conclusion
 This task was a great hands-on experience with AWS EC2.
 It helped me understand how cloud virtual machines work, how to access them remotely, and how to manage resources efficiently.
 I feel much more confident navigating the cloud now and look forward to exploring more advanced cloud services in the future.
